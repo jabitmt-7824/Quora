@@ -1,0 +1,27 @@
+<link rel="stylesheet" type="text/css" href="/css/reset.css">
+
+<main>
+
+    <!-- reset section -->
+    <div id="reset">
+        <h2>Reset Password</h2>
+
+        <!-- reset form -->
+        <form action="/user/reset-pass" method="POST">
+            <div class="form-element">
+                <label for="current">Current Password:</label>
+                <input type="password" name="current" id="current" placeholder="Enter your Current Password" />
+            </div>
+            <div class="form-element">
+                <label for="new">New Password:</label>
+                <input type="password" name="new" id="new" placeholder="Enter New Password" />
+            </div>
+            <div class="form-element">
+                <label for="confirm">Confirm Password:</label>
+                <input type="password" name="confirm" id="confirm" placeholder="Re-enter New Password" />
+            </div>
+            <hr>
+            <button>Reset</button>
+        </form>
+    </div>
+</main>

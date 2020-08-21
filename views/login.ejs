@@ -1,0 +1,23 @@
+<link rel="stylesheet" type="text/css" href="/css/login.css">
+<main>
+
+	<!--   login section    -->
+    <div id="login">
+		<h2>USER LOGIN</h2>
+
+		<!--    login form    -->
+    	<form action="/user/signin-user" method="POST">
+    	<label for="email">E-mail :</label>
+    	<input type="email" name="email" id="email" placeholder="example@gmail.com">
+    	<label for="password">Password :</label>
+    	<input type="password" name="password" id="password">
+    	<button>LOGIN</button>
+    	<a href="#">forgot password?</a>
+		</form>
+
+		<!--    signup    -->
+		<a href="/user/signup" id="signup">SignUp</a>
+		<!--    Login/SignUp with Google    -->
+        <a href="/user/auth/google" id="google-auth"><button><i class="fab fa-google" aria-hidden="true"></i>Login/SignUp with Google</button></a>
+    </div>
+</main>

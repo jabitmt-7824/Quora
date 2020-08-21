@@ -1,0 +1,62 @@
+/* main section */
+main{
+	display: flex;
+	flex-direction: row; 
+	justify-content: center;
+	align-items: center;
+}
+/* signup section */
+#reset{
+	width: 25rem;
+    text-align: center;
+    border-radius: 6px;
+    border: 2px solid black;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+#reset h2{
+	text-align: center;
+}
+/* signup form */
+form{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 2rem;
+    border-top:1px solid black;
+}
+
+.form-element{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	margin: 0.4rem 1rem;
+}
+
+hr{
+	width: 99%;
+	height: 1px;
+	background-color: black;
+}
+
+/* signup button */
+button{
+	margin: auto;
+	margin-top: 0.4rem; 
+}
+
+@media all and (max-width: 600px)
+{
+	main{
+
+		 display: block;
+	}
+	#signup{
+		width:80%;
+		margin-left:10%;
+	}
+}

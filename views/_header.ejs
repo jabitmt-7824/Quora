@@ -1,0 +1,34 @@
+<header>
+    <h3>Quora</h3>
+        <ul>
+            <% if(locals.user){ %>
+                <li>
+                    <a href="#">Feeds</a>
+                </li>
+                <li>
+                    <a href="#">Answers</a> 
+                </li>
+                <li>
+                    <a href="#">Add Question</a> 
+                </li>
+                <li>
+                    <a href="#">Add Intrests</a> 
+                </li>
+                <li>
+                    <a href="#">Users</a> 
+                </li>
+                <li>
+                    <a href="/user/reset-page">Reset Password</a> 
+                </li>
+                <li>
+                    <a href="/user/logout">Signout</a> 
+                </li>
+                <li id="profile-container">
+                    <div id="profile-img-container">
+                        <img src="<%= locals.user.avatar %>" />
+                    </div>
+                    <div id="profile-name"><%= locals.user.name %></div>
+                </li>
+            <%} %>    
+        </ul>
+</header>
